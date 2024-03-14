@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8" />
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="styled.css" />
+
+    <title>Eclipse Pay Login</title>
+
+</head>
+
+<body>
+
+    <form id="form" action="#" method="post"> 
+
+        <div class="container">
+
+            <h2>Login</h2>
+
+            <label for=""> Email</label>
+
+            <input type="email" name="email_address" title="Please enter a valid email" required/>
+
+            <label for="password"> Password</label>
+
+            <input type="password" id="password" name="password" 
+                   pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}" 
+                   title="Must contain at least one number,one uppercase and lowercase letter, and at least 8 characters" required   /><br>
+
+
+            <button class="btn-login" type="submit" value="Submit form">Login</button>
+
+        <p class="signin">
+
+                Forget your password? <a href="#" class="link">Reset Password</a>
+
+            </p>
+
+             <a class="btn-external-login" href=""><img src="./assets/google.png" alt="" /><span>Continue with Google</span></a>
+        
+        
+            <a class="btn-external-login" href=""><img src="./assets/apple.png" alt="" /><span>Continue with Apple </span></a> </form>
+
+           <p class="signup">Not a Customer? <a href="#" class="link">SignUp!</a> </p>
+
+
+            
+
+        </div>
+
+    </form>
+
+        
+   <script src="validation.js"></script>
+   <script src="passvalidatiion.js"></script> 
+       
+<!-- <script src="./app.js"></script> -->
+
+        
+           
+</body>
+
+</html>
